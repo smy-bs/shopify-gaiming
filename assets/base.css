@@ -3595,3 +3595,43 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+/* HERO GAIMING */
+.hero-gaiming {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-gaiming::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.75), rgba(0,0,0,.95));
+}
+
+.hero-gaiming__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-gaiming h1 {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-gaiming a.button {
+  padding: 14px 40px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#00f5ff,#7a00ff);
+  font-weight: 700;
+}
+
