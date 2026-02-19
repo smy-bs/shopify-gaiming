@@ -3635,3 +3635,58 @@ details-disclosure > details {
   font-weight: 700;
 }
 
+/* =========================
+   FEATURED PRODUCTS
+========================= */
+
+.featured-products {
+  background: #0b0b0f;
+  padding: 80px 5%;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+
+.product-card {
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(0,245,255,.25);
+}
+
+.product-card__info {
+  padding: 20px;
+}
+
+.product-card__title {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.product-card__price {
+  color: #00f5ff;
+  font-size: 14px;
+}
+
+/* =========================
+   PRODUCT METAFIELDS
+========================= */
+
+.product-extra {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: rgba(0,245,255,.08);
+  border-left: 4px solid #00f5ff;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
